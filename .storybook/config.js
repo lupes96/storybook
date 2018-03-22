@@ -1,5 +1,4 @@
 import { configure } from "@storybook/react";
-// import { configure } from "@storybook/addon-viewport";
 
 function loadStories() {
     require("../src/stories/index.js");
