@@ -1,19 +1,17 @@
-
-
+@import '../../styles/global.scss';
 
 .Button {
-    background: var(--baseBlue);
+    background: $baseBlue;
     color: #fff;
     border: 0;
     padding: 10px 20px;
-    @apply --bor-rad;
-    @apply --pointer;
-}
+   @include bor-rad;
+    @include pointer;
 
-.Button:focus{
+    &:focus{
         border: none;
         outline: none;
-    
+    }
 }
 
 .ButtonLightest {
