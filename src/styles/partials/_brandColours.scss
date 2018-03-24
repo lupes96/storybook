@@ -2,16 +2,20 @@
 
 
 $green: #064e37;
-$greenDark: #043e27;
-$greenLight: #2ea836;
+$greenDark: darken(#064e37, 2%);
+$greenFresh: #2ea836;
+$greenFreshDark: darken($greenFresh, 5%);
 $yellow: #fcbc00;
 $yellowDark: darken(#fcbc00, 2%);
 $greyDark: #686c6f;
 $grey:  #e3e6e5;
 $black:  #00020f;
-$error:#d70926;
-$red:$error;
-$success: $greenLight;
+$red: #99061a;
+$redDark:darken($red, 5%);
+$blue:#006ab4;
+$blueDark:darken($blue, 5%);
+$error: $red;
+$success: $greenFresh;
 
 // Secondary Palette
 
@@ -38,3 +42,5 @@ $cocoa: #ab806e;
 $cream: #faf6e7;
 $mushroom:#ded3a8
 
+// colors to keep
+// red, yellow, green, blue, grey, black

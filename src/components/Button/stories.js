@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withNotes } from '@storybook/addon-notes';
 import { withInfo } from '@storybook/addon-info';
-import { Button } from 'semantic-ui-react';
+import { Button, Label } from 'semantic-ui-react';
 import ButtonUI from './Button';
 import Icon from '../Icons/Icons';
 import Wrapper from '../Wrapper/Wrapper';
@@ -42,7 +42,8 @@ storiesOf('Buttons', module)
           <ButtonUI success="true">
             Success
           </ButtonUI>
-
+          <ButtonUI positive>Positive Button</ButtonUI>
+          <ButtonUI negative>Negative Button</ButtonUI>
         </Wrapper>
       ))
     ),
@@ -68,7 +69,21 @@ storiesOf('Buttons', module)
       )(
         () => (
           <Wrapper>
-            <Button basic primary>a Button</Button>
+            <ButtonUI basic>Default</ButtonUI>
+            <ButtonUI primary basic>
+              Primary
+            </ButtonUI>
+            <ButtonUI secondary basic>
+              Secondary
+            </ButtonUI>
+            <ButtonUI error="true" basic>
+              Error
+            </ButtonUI>
+            <ButtonUI success="true" basic>
+              Success
+            </ButtonUI>
+            <ButtonUI positive basic>Positive Button</ButtonUI>
+            <ButtonUI negative basic>Negative Button</ButtonUI>
           </Wrapper>
         ),
         { skip: 1 }
@@ -112,6 +127,44 @@ import { Button } from 'semantic-ui-react';
             <Button.Content hidden>
               Contact Us
             </Button.Content>
+          </ButtonUI>
+        </Wrapper>
+      ),
+      { skip: 1 }
+    )
+  )
+  .addWithJSX(
+    'Icons',
+    withInfo(
+      `
+Add Icons using both shorthand and longhand syntax
+
+~~~js
+// longhand
+<ButtonUI icon primary>
+<Icon name="world" />
+</ButtonUI>
+
+//shorthand
+<ButtonUI icon="help" />
+~~~
+  
+    `
+    )(
+      () => (
+        <Wrapper>
+          <ButtonUI icon color="blue">
+            <Icon name="search" />
+          </ButtonUI>
+          <ButtonUI icon="address card" color="red" />
+
+          <ButtonUI icon labelPosition="left" secondary>
+            <Icon name="pause" />
+            Pause
+          </ButtonUI>
+          <ButtonUI icon labelPosition="right" color="green">
+            Next
+            <Icon name="right arrow" />
           </ButtonUI>
         </Wrapper>
       ),
