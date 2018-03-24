@@ -1,0 +1,40 @@
+@mixin font-face($font-family, $file-path, $font-weight, $font-style) {
+    @font-face {
+        font-family: $font-family;
+        src:  url('#{$file-path}.woff') format('woff'),
+        url('#{$file-path}.ttf') format('truetype');
+        font-weight: $font-weight;
+        font-style: $font-style;
+    }
+}
+
+@include font-face(Morrisons-Agenda, '/src/assets/fonts/MorrisonsAgenda-Light', 100, normal);
+@include font-face(Morrisons-Agenda, '/src/assets/fonts/MorrisonsAgenda-Medium', 300, normal);
+@include font-face(Morrisons-Agenda, '/src/assets/fonts/MorrisonsAgenda-Semibold', 500, normal);
+@include font-face(Morrisons-Agenda, '/src/assets/fonts/MorrisonsAgenda-Bold', bold, normal);
+
+
+
+@mixin Agenda-Light {
+    font-family: 'Morrisons-Agenda','Times New Roman';
+    font-weight: 100;
+    font-style: normal;
+}
+
+@mixin Agenda-Medium {
+    font-family: 'Morrisons-Agenda', Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@mixin Agenda-Semibold {
+    font-family: 'Morrisons-Agenda', Arial, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@mixin Agenda-Bold {
+    font-family: 'Morrisons-Agenda', Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}

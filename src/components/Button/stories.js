@@ -26,7 +26,7 @@ storiesOf('Buttons', module)
       )(() => (
         <div>
 
-          <Button primary>a Button</Button>
+          <Button>a Button</Button>
         </div>
       ))
     ),
