@@ -5,19 +5,8 @@ import { withNotes } from '@storybook/addon-notes';
 import { withInfo } from '@storybook/addon-info';
 import { Button } from 'semantic-ui-react';
 import ButtonUI from './Button';
-// import Icon from '../Icons/Icons';
-import { Icon } from 'semantic-ui-react';
-
-const styles = {
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center'
-};
-const Wrapper = ({ children }) => (
-  <div style={styles}>
-    {children}
-  </div>
-);
+import Icon from '../Icons/Icons';
+import Wrapper from '../Wrapper/Wrapper';
 
 storiesOf('Buttons', module)
   .addWithJSX(

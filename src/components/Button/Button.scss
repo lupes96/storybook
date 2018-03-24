@@ -14,6 +14,7 @@ $btnColor: $black;
 :global{
 .ui.button {
    @include Agenda-Bold;
+   width:100%;
     cursor: pointer;
     display: inline-block;
     min-height: 1em;
@@ -22,7 +23,7 @@ $btnColor: $black;
     vertical-align: baseline;
     background: $btnBackGround;
     color: $btnColor;
-    margin: 0em 0.25em 0em 0em;
+    margin: 0em 0.25em 0.25em 0em;
     padding: 0.78571429em 1.5em 0.78571429em;
     text-transform: none;
     text-shadow: none;
@@ -42,6 +43,12 @@ user-select: none;
     -webkit-tap-highlight-color: transparent;
   }
   
+  @media (min-width:768px) {
+    .ui.button {
+width:auto;
+margin: 0em 0.25em 0em 0em;
+    }
+  }
   
   /*******************************
               States
