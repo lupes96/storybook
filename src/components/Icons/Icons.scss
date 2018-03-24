@@ -17,7 +17,24 @@
     text-decoration: inherit;
     text-transform: none;
   }
-
+  @font-face {
+    font-family: 'outline-icons';
+    src: url("/src/assets/fonts/outline-icons.woff") format('woff'), url("/src/assets/fonts/outline-icons.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-decoration: inherit;
+    text-transform: none;
+  }
+  @font-face {
+    font-family: 'brand-icons';
+    src: url("/src/assets/fonts/brand-icons.woff") format('woff'), url("/src/assets/fonts/brand-icons.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-decoration: inherit;
+    text-transform: none;
+  }
 :global{
 // @font-face {
 //     font-family: 'Icons';
@@ -4008,15 +4025,7 @@
   /* Outline Icon */
   
   /* Load & Define Icon Font */
-  @font-face {
-    font-family: 'outline-icons';
-    src: url("/src/assets/fonts/outline-icons.woff") format('woff'), url("/src/assets/fonts/outline-icons.ttf") format('truetype');
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-decoration: inherit;
-    text-transform: none;
-  }
+
   i.icon.outline {
     font-family: 'outline-icons';
   }
@@ -4393,15 +4402,7 @@
   
   
   /* Load & Define Brand Font */
-  @font-face {
-    font-family: 'brand-icons';
-    src: url("/src/assets/fonts/brand-icons.woff") format('woff'), url("/src/assets/fonts/brand-icons.ttf") format('truetype');
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-decoration: inherit;
-    text-transform: none;
-  }
+
   
   /* Brand Icon Font Family */
   i.icon.\35 00px,

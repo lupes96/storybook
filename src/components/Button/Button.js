@@ -6,10 +6,16 @@ import styles from './Button.scss';
 
 const Buttons = props => (
   <div>
-    <Button className={styles.ButtonStyles} {...props}>
+    <Button
+      className={styles.ButtonStyles}
+      {...props}
+      color={props.error === 'true' ? 'red' : props.success === 'true' ? 'green' : null}
+    >
       {props.children}
     </Button>
-    <Button icon="world" />
+
   </div>
 );
+
+// Buttons.displayName = 'Button';
 export default Buttons;

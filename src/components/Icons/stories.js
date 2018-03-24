@@ -6,7 +6,7 @@ import { withInfo } from '@storybook/addon-info';
 
 import Icon from './Icons';
 
-storiesOf('Icon', module).addWithJSX(
+storiesOf('Icons', module).addWithJSX(
   'world',
   withNotes(
     `

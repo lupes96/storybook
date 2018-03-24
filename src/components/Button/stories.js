@@ -3,7 +3,10 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withNotes } from '@storybook/addon-notes';
 import { withInfo } from '@storybook/addon-info';
-import Button from './Button';
+import { Button } from 'semantic-ui-react';
+import ButtonUI from './Button';
+// import Icon from '../Icons/Icons';
+import { Icon } from 'semantic-ui-react';
 
 const styles = {
   display: 'flex',
@@ -37,11 +40,25 @@ storiesOf('Buttons', module)
       )(() => (
         <Wrapper>
 
-          <Button>Default</Button>
-          <Button primary>
-            Primary{' '}
-          </Button>
-
+          <ButtonUI>Default</ButtonUI>
+          <ButtonUI primary>
+            Primary
+          </ButtonUI>
+          <ButtonUI secondary>
+            Secondary
+          </ButtonUI>
+          <ButtonUI error="true">
+            Error
+          </ButtonUI>
+          <ButtonUI success="true">
+            Success
+          </ButtonUI>
+          <ButtonUI animated>
+            <Button.Content visible>Next</Button.Content>
+            <Button.Content hidden>
+              <Icon name="right arrow" />
+            </Button.Content>
+          </ButtonUI>
         </Wrapper>
       ))
     ),
