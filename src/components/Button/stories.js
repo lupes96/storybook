@@ -21,7 +21,7 @@ const Wrapper = ({ children }) => (
 
 storiesOf('Buttons', module)
   .addWithJSX(
-    'Semantic UI Button',
+    'Standard',
     withInfo(
       `
      ### Description or documentation about my component
@@ -53,30 +53,78 @@ storiesOf('Buttons', module)
           <ButtonUI success="true">
             Success
           </ButtonUI>
-          <ButtonUI animated>
-            <Button.Content visible>Next</Button.Content>
-            <Button.Content hidden>
-              <Icon name="right arrow" />
-            </Button.Content>
-          </ButtonUI>
+
         </Wrapper>
       ))
     ),
     { skip: 1 }
   )
   .addWithJSX(
-    'Semantic UI Basic Button',
-    withNotes(
+    'Basic',
+    withInfo(
       `
-  This is some code showing usage of the component and other inline documentation aha
+
+    
+      ~~~js
+      <Button basic>A basic button</Button>
+      ~~~
+    
+    `
+    )(
+      withNotes(
+        `
+  This is some code with Info!!
+  
+    `
+      )(
+        () => (
+          <Wrapper>
+            <Button basic primary>a Button</Button>
+          </Wrapper>
+        ),
+        { skip: 1 }
+      )
+    )
+  )
+  .addWithJSX(
+    'Animated',
+    withInfo(
+      `
+Animated buttons examples.
+
+Need to import the Buttons Component from Semantic UI to get this to work
+
+~~~js
+import { Button } from 'semantic-ui-react';
+~~~
   
     `
     )(
       () => (
-        <div>
+        <Wrapper>
+          <ButtonUI animated>
+            <Button.Content visible>Next</Button.Content>
+            <Button.Content hidden>
+              <Icon name="right arrow" />
+            </Button.Content>
+          </ButtonUI>
 
-          <Button basic primary>a Button</Button>
-        </div>
+          <ButtonUI animated="vertical" primary>
+            <Button.Content hidden>Home</Button.Content>
+            <Button.Content visible>
+              <Icon name="home" />
+            </Button.Content>
+          </ButtonUI>
+
+          <ButtonUI animated="fade" secondary>
+            <Button.Content visible>
+              <Icon name="help" /> Need help?
+            </Button.Content>
+            <Button.Content hidden>
+              Contact Us
+            </Button.Content>
+          </ButtonUI>
+        </Wrapper>
       ),
       { skip: 1 }
     )

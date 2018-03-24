@@ -17,5 +17,5 @@ const Buttons = props => (
   </div>
 );
 
-// Buttons.displayName = 'Button';
+Buttons.displayName = 'Button';
 export default Buttons;
