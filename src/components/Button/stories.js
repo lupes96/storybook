@@ -5,6 +5,17 @@ import { withNotes } from '@storybook/addon-notes';
 import { withInfo } from '@storybook/addon-info';
 import Button from './Button';
 
+const styles = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center'
+};
+const Wrapper = ({ children }) => (
+  <div style={styles}>
+    {children}
+  </div>
+);
+
 storiesOf('Buttons', module)
   .addWithJSX(
     'Semantic UI Button',
@@ -24,10 +35,14 @@ storiesOf('Buttons', module)
   
     `
       )(() => (
-        <div>
+        <Wrapper>
 
-          <Button>a Button</Button>
-        </div>
+          <Button>Default</Button>
+          <Button primary>
+            Primary{' '}
+          </Button>
+
+        </Wrapper>
       ))
     ),
     { skip: 1 }

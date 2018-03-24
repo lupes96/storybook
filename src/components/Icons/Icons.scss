@@ -1,5 +1,13 @@
 
-:global{
+.ic{
+    // font-family: 'Icons'!important;
+    // src: url("/src/assets/fonts/icons.woff") format('woff'), url("/src/assets/fonts/icons.ttf") format('truetype');
+    // font-style: normal;
+    // font-weight: normal;
+    // font-variant: normal;
+    // text-decoration: inherit;
+    // text-transform: none;
+}
 @font-face {
     font-family: 'Icons';
     src: url("/src/assets/fonts/icons.woff") format('woff'), url("/src/assets/fonts/icons.ttf") format('truetype');
@@ -9,6 +17,17 @@
     text-decoration: inherit;
     text-transform: none;
   }
+
+:global{
+// @font-face {
+//     font-family: 'Icons';
+//     src: url("/src/assets/fonts/icons.woff") format('woff'), url("/src/assets/fonts/icons.ttf") format('truetype');
+//     font-style: normal;
+//     font-weight: normal;
+//     font-variant: normal;
+//     text-decoration: inherit;
+//     text-transform: none;
+//   }
   i.icon {
     display: inline-block;
     opacity: 1;
@@ -136,35 +155,8 @@
             box-shadow: none;
   }
   
-  /*-------------------
-        Flipped
-  --------------------*/
-  
-  i.flipped.icon,
-  i.horizontally.flipped.icon {
-    -webkit-transform: scale(-1, 1);
-            transform: scale(-1, 1);
-  }
-  i.vertically.flipped.icon {
-    -webkit-transform: scale(1, -1);
-            transform: scale(1, -1);
-  }
-  
-  /*-------------------
-        Rotated
-  --------------------*/
-  
-  i.rotated.icon,
-  i.right.rotated.icon,
-  i.clockwise.rotated.icon {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
-  i.left.rotated.icon,
-  i.counterclockwise.rotated.icon {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-  }
+
+
   
   /*-------------------
         Bordered
@@ -179,26 +171,9 @@
     -webkit-box-shadow: 0em 0em 0em 0.1em rgba(0, 0, 0, 0.1) inset;
             box-shadow: 0em 0em 0em 0.1em rgba(0, 0, 0, 0.1) inset;
   }
-  i.bordered.inverted.icon {
-    border: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  
-  /*-------------------
-        Inverted
-  --------------------*/
-  
-  
-  /* Inverted Shapes */
-  i.inverted.bordered.icon,
-  i.inverted.circular.icon {
-    background-color: #1B1C1D !important;
-    color: #FFFFFF !important;
-  }
-  i.inverted.icon {
-    color: #FFFFFF;
-  }
+
+
+
   
   /*-------------------
          Colors
@@ -378,21 +353,21 @@
           Sizes
   --------------------*/
   
-  i.mini.icon,
-  i.mini.icons {
-    line-height: 1;
-    font-size: 0.4em;
-  }
-  i.tiny.icon,
-  i.tiny.icons {
-    line-height: 1;
-    font-size: 0.5em;
-  }
-  i.small.icon,
-  i.small.icons {
-    line-height: 1;
-    font-size: 0.75em;
-  }
+//   i.mini.icon,
+//   i.mini.icons {
+//     line-height: 1;
+//     font-size: 0.4em;
+//   }
+//   i.tiny.icon,
+//   i.tiny.icons {
+//     line-height: 1;
+//     font-size: 0.5em;
+//   }
+//   i.small.icon,
+//   i.small.icons {
+//     line-height: 1;
+//     font-size: 0.75em;
+//   }
   i.icon,
   i.icons {
     font-size: 1em;
@@ -415,12 +390,12 @@
     vertical-align: middle;
     font-size: 4em;
   }
-  i.massive.icon,
-  i.massive.icons {
-    line-height: 1;
-    vertical-align: middle;
-    font-size: 8em;
-  }
+//   i.massive.icon,
+//   i.massive.icons {
+//     line-height: 1;
+//     vertical-align: middle;
+//     font-size: 8em;
+//   }
   
   
   /*******************************

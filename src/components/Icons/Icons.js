@@ -4,7 +4,7 @@ import styles from './Icons.scss';
 
 const Icons = props => {
   return (
-    <Icon {...props}>
+    <Icon {...props} className={styles.ic}>
       {props.children}
     </Icon>
   );

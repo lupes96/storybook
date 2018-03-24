@@ -7,14 +7,9 @@ import styles from './Button.scss';
 const Buttons = props => (
   <div>
     <Button className={styles.ButtonStyles} {...props}>
-      Click Here
+      {props.children}
     </Button>
-    <Button primary>
-      Basic bitch
-    </Button>
-    <Button icon>
-      <Icon name="world" />
-    </Button>
+    <Button icon="world" />
   </div>
 );
 export default Buttons;
