@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withNotes } from '@storybook/addon-notes';
 import { withInfo } from '@storybook/addon-info';
-import { Button, Label } from 'semantic-ui-react';
-import ButtonUI from './Button';
+import { Label } from 'semantic-ui-react';
+import Button from './Button';
 import Icon from '../Icons/Icons';
 import Heading from '../Heading/Heading';
 import Wrapper from '../Wrapper/Wrapper';
@@ -22,31 +22,31 @@ storiesOf('Buttons', module)
         <div>
           <Wrapper>
             <Heading as="h3" textAlign="center">Standard</Heading>
-            <ButtonUI>Default</ButtonUI>
-            <ButtonUI primary>
+            <Button>Default</Button>
+            <Button primary>
               Primary
-            </ButtonUI>
-            <ButtonUI secondary>
+            </Button>
+            <Button secondary>
               Secondary
-            </ButtonUI>
-            <ButtonUI success="true">
+            </Button>
+            <Button success="true">
               Success
-            </ButtonUI>
-            <ButtonUI error="true">
+            </Button>
+            <Button error="true">
               Error
-            </ButtonUI>
+            </Button>
 
-            <ButtonUI positive>Positive</ButtonUI>
+            <Button positive>Positive</Button>
 
             <Heading as="h3" textAlign="center"> Disabled</Heading>
 
-            <ButtonUI disabled>Default</ButtonUI>
-            <ButtonUI primary disabled>
+            <Button disabled>Default</Button>
+            <Button primary disabled>
               Primary{' '}
-            </ButtonUI>
-            <ButtonUI secondary disabled>
+            </Button>
+            <Button secondary disabled>
               Secondary{' '}
-            </ButtonUI>
+            </Button>
           </Wrapper>
         </div>
       ))
@@ -60,7 +60,7 @@ storiesOf('Buttons', module)
 
     
       ~~~js
-      <Button basic>A basic button</Button>
+      <Button basic>A basic Button</Button>
       ~~~
     
     `
@@ -73,24 +73,24 @@ storiesOf('Buttons', module)
       )(
         () => (
           <Wrapper>
-            <ButtonUI compact>Compact</ButtonUI>
-            <ButtonUI size="small">Small</ButtonUI>
-            <ButtonUI size="medium">
+            <Button compact>Compact</Button>
+            <Button size="small">Small</Button>
+            <Button size="medium">
               Medium
-            </ButtonUI>
-            <ButtonUI size="large">
+            </Button>
+            <Button size="large">
               Large
-            </ButtonUI>
-            <ButtonUI size="big">
+            </Button>
+            <Button size="big">
               Big
-            </ButtonUI>
-            <ButtonUI size="huge">
+            </Button>
+            <Button size="huge">
               Huge
-            </ButtonUI>
-            <ButtonUI size="massive">
+            </Button>
+            <Button size="massive">
               Massive
-            </ButtonUI>
-            <ButtonUI fluid>Full width</ButtonUI>
+            </Button>
+            <Button fluid>Full width</Button>
           </Wrapper>
         ),
         { skip: 1 }
@@ -101,7 +101,7 @@ storiesOf('Buttons', module)
     'Animated',
     withInfo(
       `
-Animated buttons examples.
+Animated Buttons examples.
 
 Need to import the Buttons Component from Semantic UI to get this to work
 
@@ -113,28 +113,28 @@ import { Button } from 'semantic-ui-react';
     )(
       () => (
         <Wrapper>
-          <ButtonUI animated>
+          <Button animated>
             <Button.Content visible>Next</Button.Content>
             <Button.Content hidden>
               <Icon name="right arrow" />
             </Button.Content>
-          </ButtonUI>
+          </Button>
 
-          <ButtonUI animated="vertical" primary>
+          <Button animated="vertical" primary>
             <Button.Content hidden>Home</Button.Content>
             <Button.Content visible>
               <Icon name="home" />
             </Button.Content>
-          </ButtonUI>
+          </Button>
 
-          <ButtonUI animated="fade" secondary>
+          <Button animated="fade" secondary>
             <Button.Content visible>
               <Icon name="help" /> Need help?
             </Button.Content>
             <Button.Content hidden>
               Contact Us
             </Button.Content>
-          </ButtonUI>
+          </Button>
         </Wrapper>
       ),
       { skip: 1 }
@@ -148,12 +148,12 @@ Add Icons using both shorthand and longhand syntax
 
 ~~~js
 // longhand
-<ButtonUI icon primary>
+<Button icon primary>
 <Icon name="world" />
-</ButtonUI>
+</Button>
 
 //shorthand
-<ButtonUI icon="help" />
+<Button icon="help" />
 ~~~
   
     `
@@ -161,19 +161,19 @@ Add Icons using both shorthand and longhand syntax
       () => (
         <Wrapper>
 
-          <ButtonUI circular icon="address card" />
+          <Button icon="address card" />
 
-          <ButtonUI icon labelPosition="left" secondary circular>
+          <Button icon labelPosition="left" secondary>
             <Icon name="pause" />
             Pause
-          </ButtonUI>
-          <ButtonUI icon>
+          </Button>
+          <Button icon>
             <Icon name="search" />
-          </ButtonUI>
-          <ButtonUI icon labelPosition="right" color="green">
+          </Button>
+          <Button icon labelPosition="right" color="green">
             Next
             <Icon name="right arrow" />
-          </ButtonUI>
+          </Button>
         </Wrapper>
       ),
       { skip: 1 }
@@ -195,24 +195,24 @@ import { Button } from 'semantic-ui-react'
         <div>
           <Wrapper>
             <Button.Group color="blue">
-              <ButtonUI>One</ButtonUI>
-              <ButtonUI>Two</ButtonUI>
-              <ButtonUI active><Icon name="sass" /> Sass</ButtonUI>
+              <Button>One</Button>
+              <Button>Two</Button>
+              <Button active><Icon name="sass" /> Sass</Button>
             </Button.Group>
           </Wrapper>
           <Wrapper>
             <Button.Group basic>
-              <ButtonUI> <Icon name="home" /> Home</ButtonUI>
-              <ButtonUI>Two</ButtonUI>
-              <ButtonUI active>Three</ButtonUI>
-              <ButtonUI>Four</ButtonUI>
+              <Button> <Icon name="home" /> Home</Button>
+              <Button>Two</Button>
+              <Button active>Three</Button>
+              <Button>Four</Button>
             </Button.Group>
           </Wrapper>
           <Wrapper>
             <Button.Group primary>
-              <ButtonUI>One</ButtonUI>
-              <ButtonUI active><Icon name="world" /> World</ButtonUI>
-              <ButtonUI>Four</ButtonUI>
+              <Button>One</Button>
+              <Button active><Icon name="world" /> World</Button>
+              <Button>Four</Button>
             </Button.Group>
           </Wrapper>
           <Wrapper>
@@ -246,38 +246,38 @@ import { Button } from 'semantic-ui-react'
           <Wrapper>
 
             <Button.Group basic>
-              <ButtonUI icon>
+              <Button icon>
                 <Icon name="desktop" />
-              </ButtonUI>
-              <ButtonUI icon active>
+              </Button>
+              <Button icon active>
                 <Icon name="code" />
-              </ButtonUI>
-              <ButtonUI icon primary>
+              </Button>
+              <Button icon primary>
                 <Icon name="terminal" />
-              </ButtonUI>
-              <ButtonUI icon>
+              </Button>
+              <Button icon>
                 <Icon name="address card" />
-              </ButtonUI>
+              </Button>
             </Button.Group>
           </Wrapper>
           <Wrapper>
             <Button.Group secondary>
-              <ButtonUI icon>
+              <Button icon>
                 <Icon name="envelope" />
-              </ButtonUI>
-              <ButtonUI icon active>
+              </Button>
+              <Button icon active>
                 <Icon name="wifi" />
-              </ButtonUI>
-              <ButtonUI icon>
+              </Button>
+              <Button icon>
                 <Icon name="home" />
-              </ButtonUI>
+              </Button>
             </Button.Group>
           </Wrapper>
           <Wrapper>
             <Button.Group color="blue">
-              <ButtonUI labelPosition="left" icon="left chevron" content="Back" />
-              <ButtonUI icon="stop" content="Stop" active />
-              <ButtonUI labelPosition="right" icon="right chevron" content="Forward" />
+              <Button labelPosition="left" icon="left chevron" content="Back" />
+              <Button icon="stop" content="Stop" active />
+              <Button labelPosition="right" icon="right chevron" content="Forward" />
             </Button.Group>
 
           </Wrapper>

@@ -12,6 +12,7 @@ const Buttons = props => (
 
   </Button>
 );
-
+Buttons.Content = Button.Content;
+Buttons.Group = Button.Group;
 Buttons.displayName = 'Button';
 export default Buttons;
