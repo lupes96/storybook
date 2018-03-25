@@ -32,7 +32,7 @@ $btnColor: $black;
     // border-radius: 0.23571429rem;
     box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
     user-select: none; 
-    transition: all .3s ease;
+   @include transition(all);
     will-change: '';
     -webkit-tap-highlight-color: transparent;
   }
@@ -50,9 +50,8 @@ $btnColor: $black;
   
   .ui.button:hover {
     background-color: $btnHover;
-    background-image: none;
- box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
-
+    background-image: none;   
+   box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   }
   .ui.button:hover .icon {
     opacity: 0.85;
@@ -65,6 +64,7 @@ $btnColor: $black;
   .ui.button:focus {
     background-color: $btnFocus;
     background-image: '' !important;
+
 box-shadow: '' !important;
   }
   .ui.button:focus .icon {
@@ -197,8 +197,7 @@ background-color: $btnFocus;
   }
   .ui.vertical.animated.button:focus .visible.content,
   .ui.vertical.animated.button:hover .visible.content {
-   
-            transform: translateY(200%);
+transform: translateY(200%);
     right: auto;
   }
   .ui.vertical.animated.button:focus .hidden.content,

@@ -20,6 +20,7 @@ Standard Buttons
     `
       )(() => (
         <div>
+
           <Wrapper>
             <Heading as="h3" textAlign="center">Standard</Heading>
             <Button>Default</Button>
@@ -204,7 +205,7 @@ Add Icons using both shorthand and longhand syntax
           </Wrapper>
           <Wrapper>
 
-            <Button.Group vertical>
+            <Button.Group vertical basic>
               <Button>Vertical navigation menu</Button>
               <Button active>Link active</Button>
               <Button><Icon name="wifi" /> Internet</Button>

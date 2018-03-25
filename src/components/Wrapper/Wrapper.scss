@@ -16,6 +16,13 @@
     text-align:left;
 }
 
+.WrapperSmall {
+    composes: Wrapper;
+    display:block;
+    margin:0 auto;
+    max-width:900px;
+}
+
 .Wrapper > div{
     display:block;
 

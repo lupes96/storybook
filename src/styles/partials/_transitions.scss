@@ -1,3 +1,15 @@
 @mixin btnTransition($type) {
+    -webkit-backface-visibility: hidden; 
+    -ms-transform: translateZ(0); 
+    -webkit-transform: translateZ(0); 
+    transform: translateZ(0);
+    transition: $type 0.3s ease;
+}
+
+@mixin transition($type) {
+    -webkit-backface-visibility: hidden; 
+    -ms-transform: translateZ(0); 
+    -webkit-transform: translateZ(0); 
+    transform: translateZ(0);
     transition: $type 0.3s ease;
 }
