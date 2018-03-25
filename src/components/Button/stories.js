@@ -169,14 +169,15 @@ Add Icons using both shorthand and longhand syntax
     )(
       () => (
         <Wrapper>
-          <ButtonUI icon color="blue">
-            <Icon name="search" />
-          </ButtonUI>
-          <ButtonUI icon="address card" color="red" />
+
+          <ButtonUI icon="address card" />
 
           <ButtonUI icon labelPosition="left" secondary>
             <Icon name="pause" />
             Pause
+          </ButtonUI>
+          <ButtonUI icon>
+            <Icon name="search" />
           </ButtonUI>
           <ButtonUI icon labelPosition="right" color="green">
             Next
@@ -203,25 +204,23 @@ import { Button } from 'semantic-ui-react'
         <Wrapper>
           <div>
 
-            <Button.Group>
-              <ButtonUI color="blue">One</ButtonUI>
-              <ButtonUI color="blue">Two</ButtonUI>
-              <ButtonUI color="blue">Three</ButtonUI>
-              <ButtonUI color="blue">Four</ButtonUI>
+            <Button.Group widths="3" color="blue">
+              <ButtonUI>One</ButtonUI>
+              <ButtonUI>Two</ButtonUI>
+              <ButtonUI><Icon name="sass" /> Sass</ButtonUI>
             </Button.Group>
 
             <Button.Group>
-              <ButtonUI>One</ButtonUI>
+              <ButtonUI> <Icon name="home" /> Home</ButtonUI>
               <ButtonUI>Two</ButtonUI>
               <ButtonUI>Three</ButtonUI>
               <ButtonUI>Four</ButtonUI>
             </Button.Group>
 
-            <Button.Group>
-              <ButtonUI primary>One</ButtonUI>
-              <ButtonUI primary>Two</ButtonUI>
-              <ButtonUI primary>Three</ButtonUI>
-              <ButtonUI primary>Four</ButtonUI>
+            <Button.Group primary>
+              <ButtonUI>One</ButtonUI>
+              <ButtonUI><Icon name="world" /> World</ButtonUI>
+              <ButtonUI>Four</ButtonUI>
             </Button.Group>
           </div>
         </Wrapper>
@@ -271,6 +270,12 @@ import { Button } from 'semantic-ui-react'
                 <Icon name="home" />
               </ButtonUI>
             </Button.Group>
+            {' '}
+            <Button.Group>
+              <ButtonUI labelPosition="left" icon="left chevron" content="Back" />
+              <ButtonUI icon="stop" content="Stop" />
+              <ButtonUI labelPosition="right" icon="right chevron" content="Forward" />
+            </Button.Group>
           </div>
         </Wrapper>
       ),
@@ -278,20 +283,35 @@ import { Button } from 'semantic-ui-react'
     )
   )
   .addWithJSX(
-    'Loading Buttons',
+    'Social Buttons',
     withInfo(
       `
-      A button can show a loading indicator.
+      Buttons with Social links.
 
   
     `
     )(
       () => (
         <Wrapper>
-          <Button loading>Loading</Button>
-          <Button basic loading>Loading</Button>
-          <Button loading primary>Loading</Button>
-          <Button loading secondary>Loading</Button>
+          <ButtonUI color="facebook">
+            <Icon name="facebook" /> Facebook
+          </ButtonUI>
+          <ButtonUI color="twitter">
+            <Icon name="twitter" /> Twitter
+          </ButtonUI>
+          <ButtonUI color="google plus">
+            <Icon name="google plus" /> Google Plus
+          </ButtonUI>
+
+          <ButtonUI color="linkedin">
+            <Icon name="linkedin" /> LinkedIn
+          </ButtonUI>
+          <ButtonUI color="instagram">
+            <Icon name="instagram" /> Instagram
+          </ButtonUI>
+          <ButtonUI color="youtube">
+            <Icon name="youtube" /> YouTube
+          </ButtonUI>
         </Wrapper>
       ),
       { skip: 1 }
