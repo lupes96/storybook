@@ -27,24 +27,40 @@ storiesOf('Buttons', module)
   
     `
       )(() => (
-        <Wrapper>
+        <div>
+          <Wrapper>
 
-          <ButtonUI>Default</ButtonUI>
-          <ButtonUI primary>
-            Primary
-          </ButtonUI>
-          <ButtonUI secondary>
-            Secondary
-          </ButtonUI>
-          <ButtonUI error="true">
-            Error
-          </ButtonUI>
-          <ButtonUI success="true">
-            Success
-          </ButtonUI>
-          <ButtonUI positive>Positive Button</ButtonUI>
-          <ButtonUI negative>Negative Button</ButtonUI>
-        </Wrapper>
+            <ButtonUI size="small">Default Small</ButtonUI>
+            <ButtonUI primary size="medium">
+              Primary Medium
+            </ButtonUI>
+            <ButtonUI secondary size="large">
+              Secondary Large
+            </ButtonUI>
+            <ButtonUI error="true" compact>
+              Error Compact
+            </ButtonUI>
+            <ButtonUI success="true">
+              Success
+            </ButtonUI>
+            <ButtonUI positive>Positive</ButtonUI>
+
+            <ButtonUI fluid>
+              Default Full width
+            </ButtonUI>
+          </Wrapper>
+
+          <h1> Disabled</h1>
+          <Wrapper>
+            <ButtonUI size="small" disabled>Default Small</ButtonUI>
+            <ButtonUI primary size="medium" disabled>
+              Primary Medium
+            </ButtonUI>
+            <ButtonUI secondary size="large" disabled>
+              Secondary Large
+            </ButtonUI>
+          </Wrapper>
+        </div>
       ))
     ),
     { skip: 1 }
@@ -82,8 +98,8 @@ storiesOf('Buttons', module)
             <ButtonUI success="true" basic>
               Success
             </ButtonUI>
-            <ButtonUI positive basic>Positive Button</ButtonUI>
-            <ButtonUI negative basic>Negative Button</ButtonUI>
+            <ButtonUI positive basic>Positive</ButtonUI>
+            <ButtonUI fluid basic>Full width</ButtonUI>
           </Wrapper>
         ),
         { skip: 1 }
@@ -166,6 +182,116 @@ Add Icons using both shorthand and longhand syntax
             Next
             <Icon name="right arrow" />
           </ButtonUI>
+        </Wrapper>
+      ),
+      { skip: 1 }
+    )
+  )
+  .addWithJSX(
+    'Button Groups',
+    withInfo(
+      `
+Button Groups, import Button from the Semantic UI library
+
+~~~js
+import { Button } from 'semantic-ui-react'
+~~~
+  
+    `
+    )(
+      () => (
+        <Wrapper>
+          <div>
+
+            <Button.Group>
+              <ButtonUI color="blue">One</ButtonUI>
+              <ButtonUI color="blue">Two</ButtonUI>
+              <ButtonUI color="blue">Three</ButtonUI>
+              <ButtonUI color="blue">Four</ButtonUI>
+            </Button.Group>
+
+            <Button.Group>
+              <ButtonUI>One</ButtonUI>
+              <ButtonUI>Two</ButtonUI>
+              <ButtonUI>Three</ButtonUI>
+              <ButtonUI>Four</ButtonUI>
+            </Button.Group>
+
+            <Button.Group>
+              <ButtonUI primary>One</ButtonUI>
+              <ButtonUI primary>Two</ButtonUI>
+              <ButtonUI primary>Three</ButtonUI>
+              <ButtonUI primary>Four</ButtonUI>
+            </Button.Group>
+          </div>
+        </Wrapper>
+      ),
+      { skip: 1 }
+    )
+  )
+  .addWithJSX(
+    'Icon Groups',
+    withInfo(
+      `
+Icon Groups, import Button from the Semantic UI library
+
+~~~js
+import { Button } from 'semantic-ui-react'
+~~~
+  
+    `
+    )(
+      () => (
+        <Wrapper>
+          <div>
+
+            <Button.Group>
+              <ButtonUI icon>
+                <Icon name="desktop" />
+              </ButtonUI>
+              <ButtonUI icon>
+                <Icon name="code" />
+              </ButtonUI>
+              <ButtonUI icon primary>
+                <Icon name="terminal" />
+              </ButtonUI>
+              <ButtonUI icon>
+                <Icon name="address card" />
+              </ButtonUI>
+            </Button.Group>
+            {' '}
+            <Button.Group>
+              <ButtonUI icon>
+                <Icon name="envelope" />
+              </ButtonUI>
+              <ButtonUI icon secondary>
+                <Icon name="wifi" />
+              </ButtonUI>
+              <ButtonUI icon>
+                <Icon name="home" />
+              </ButtonUI>
+            </Button.Group>
+          </div>
+        </Wrapper>
+      ),
+      { skip: 1 }
+    )
+  )
+  .addWithJSX(
+    'Loading Buttons',
+    withInfo(
+      `
+      A button can show a loading indicator.
+
+  
+    `
+    )(
+      () => (
+        <Wrapper>
+          <Button loading>Loading</Button>
+          <Button basic loading>Loading</Button>
+          <Button loading primary>Loading</Button>
+          <Button loading secondary>Loading</Button>
         </Wrapper>
       ),
       { skip: 1 }

@@ -1,7 +1,6 @@
 .Wrapper{
     padding-top:20px;
-    display: flex;
- 
+    display: flex; 
     justify-content:center;
     align-items: center;
     flex-direction:column;
@@ -10,4 +9,16 @@
         flex-direction:row;
         flex-wrap:wrap;
     }
+
+
 }
+
+.Wrapper > div{
+    display: flex; 
+    flex-direction:column;
+    & div {
+        display:block;
+        padding:10px 0;
+    }
+}
+

@@ -5,16 +5,13 @@ import styles from './Button.scss';
 // import myImage from '../../assets/images/logo.png';
 
 const Buttons = props => (
-  <div>
-    <Button
-      className={styles.ButtonStyles}
-      {...props}
-      color={props.color ? props.color : props.error === 'true' ? 'red' : props.success === 'true' ? 'green' : null}
-    >
-      {props.children}
-    </Button>
-
-  </div>
+  <Button
+    className={styles.ButtonStyles}
+    {...props}
+    color={props.color ? props.color : props.error === 'true' ? 'red' : props.success === 'true' ? 'green' : null}
+  >
+    {props.children}
+  </Button>
 );
 
 Buttons.displayName = 'Button';
