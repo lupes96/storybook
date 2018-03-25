@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Button } from 'semantic-ui-react';
 import styles from './Button.scss';
 // import myImage from '../../assets/images/logo.png';

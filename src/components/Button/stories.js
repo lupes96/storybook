@@ -6,6 +6,7 @@ import { withInfo } from '@storybook/addon-info';
 import { Button, Label } from 'semantic-ui-react';
 import ButtonUI from './Button';
 import Icon from '../Icons/Icons';
+import Heading from '../Heading/Heading';
 import Wrapper from '../Wrapper/Wrapper';
 
 storiesOf('Buttons', module)
@@ -20,13 +21,13 @@ storiesOf('Buttons', module)
       )(() => (
         <div>
           <Wrapper>
-
+            <Heading as="h3" textAlign="center">Standard</Heading>
             <ButtonUI>Default</ButtonUI>
             <ButtonUI primary>
               Primary
             </ButtonUI>
             <ButtonUI secondary>
-              Secondary{' '}
+              Secondary
             </ButtonUI>
             <ButtonUI success="true">
               Success
@@ -37,10 +38,8 @@ storiesOf('Buttons', module)
 
             <ButtonUI positive>Positive</ButtonUI>
 
-          </Wrapper>
+            <Heading as="h3" textAlign="center"> Disabled</Heading>
 
-          <h1> Disabled</h1>
-          <Wrapper>
             <ButtonUI disabled>Default</ButtonUI>
             <ButtonUI primary disabled>
               Primary{' '}
