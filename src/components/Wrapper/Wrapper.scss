@@ -1,9 +1,32 @@
+// .Wrapper{
+//     padding-top:20px;
+//     display: flex; 
+//     justify-content:center;
+//     align-items: center;
+//     flex-direction:column;
+
+//     @media (min-width: 600px) {
+//         flex-direction:row;
+//         flex-wrap:wrap;
+//     }
+
+
+// }
+
+// .Wrapper > div{
+//     display: flex; 
+//     flex-direction:column;
+//     & div {
+//         display:block;
+//         padding:10px 0;
+//     }
+// }
+
 .Wrapper{
     padding-top:20px;
-    display: flex; 
-    justify-content:center;
-    align-items: center;
-    flex-direction:column;
+    width:100%;
+    display:inline-block; 
+  text-align:center;
 
     @media (min-width: 600px) {
         flex-direction:row;
@@ -14,11 +37,13 @@
 }
 
 .Wrapper > div{
-    display: flex; 
-    flex-direction:column;
+    display:block;
+    padding:10px 0;
+
     & div {
         display:block;
-        padding:10px 0;
+ 
+        margin:10px;
+     
     }
 }
-

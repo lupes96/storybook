@@ -201,29 +201,30 @@ import { Button } from 'semantic-ui-react'
     `
     )(
       () => (
-        <Wrapper>
-          <div>
-
-            <Button.Group widths="3" color="blue">
+        <div>
+          <Wrapper>
+            <Button.Group color="blue">
               <ButtonUI>One</ButtonUI>
               <ButtonUI>Two</ButtonUI>
               <ButtonUI><Icon name="sass" /> Sass</ButtonUI>
             </Button.Group>
-
+          </Wrapper>
+          <Wrapper>
             <Button.Group>
               <ButtonUI> <Icon name="home" /> Home</ButtonUI>
               <ButtonUI>Two</ButtonUI>
               <ButtonUI>Three</ButtonUI>
               <ButtonUI>Four</ButtonUI>
             </Button.Group>
-
+          </Wrapper>
+          <Wrapper>
             <Button.Group primary>
               <ButtonUI>One</ButtonUI>
               <ButtonUI><Icon name="world" /> World</ButtonUI>
               <ButtonUI>Four</ButtonUI>
             </Button.Group>
-          </div>
-        </Wrapper>
+          </Wrapper>
+        </div>
       ),
       { skip: 1 }
     )
@@ -241,8 +242,8 @@ import { Button } from 'semantic-ui-react'
     `
     )(
       () => (
-        <Wrapper>
-          <div>
+        <div>
+          <Wrapper>
 
             <Button.Group>
               <ButtonUI icon>
@@ -258,7 +259,8 @@ import { Button } from 'semantic-ui-react'
                 <Icon name="address card" />
               </ButtonUI>
             </Button.Group>
-            {' '}
+          </Wrapper>
+          <Wrapper>
             <Button.Group>
               <ButtonUI icon>
                 <Icon name="envelope" />
@@ -270,14 +272,16 @@ import { Button } from 'semantic-ui-react'
                 <Icon name="home" />
               </ButtonUI>
             </Button.Group>
-            {' '}
-            <Button.Group>
+          </Wrapper>
+          <Wrapper>
+            <Button.Group color="blue">
               <ButtonUI labelPosition="left" icon="left chevron" content="Back" />
               <ButtonUI icon="stop" content="Stop" />
               <ButtonUI labelPosition="right" icon="right chevron" content="Forward" />
             </Button.Group>
-          </div>
-        </Wrapper>
+
+          </Wrapper>
+        </div>
       ),
       { skip: 1 }
     )

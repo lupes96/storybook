@@ -10,7 +10,7 @@ function loadStories() {
 
 setDefaults({
   header: false,
-  inline: true,
+  inline: false,
   source: true
 });
 setAddon(JSXAddon);
