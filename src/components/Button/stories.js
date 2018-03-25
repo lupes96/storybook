@@ -11,16 +11,7 @@ import Wrapper from '../Wrapper/Wrapper';
 storiesOf('Buttons', module)
   .addWithJSX(
     'Standard',
-    withInfo(
-      `
-     ### Description or documentation about my component
-    
-      ~~~js
-      <Button>Click Here</Button>
-      ~~~
-    
-    `
-    )(
+    withInfo()(
       withNotes(
         `
   This is some code with Info!!
@@ -30,34 +21,31 @@ storiesOf('Buttons', module)
         <div>
           <Wrapper>
 
-            <ButtonUI size="small">Default Small</ButtonUI>
-            <ButtonUI primary size="medium">
-              Primary Medium
+            <ButtonUI>Default</ButtonUI>
+            <ButtonUI primary>
+              Primary
             </ButtonUI>
-            <ButtonUI secondary size="large">
-              Secondary Large
+            <ButtonUI secondary>
+              Secondary{' '}
             </ButtonUI>
-            <ButtonUI error="true" compact>
-              Error Compact
+            <ButtonUI error="true">
+              Error
             </ButtonUI>
             <ButtonUI success="true">
               Success
             </ButtonUI>
             <ButtonUI positive>Positive</ButtonUI>
 
-            <ButtonUI fluid>
-              Default Full width
-            </ButtonUI>
           </Wrapper>
 
           <h1> Disabled</h1>
           <Wrapper>
-            <ButtonUI size="small" disabled>Default Small</ButtonUI>
-            <ButtonUI primary size="medium" disabled>
-              Primary Medium
+            <ButtonUI disabled>Default</ButtonUI>
+            <ButtonUI primary disabled>
+              Primary{' '}
             </ButtonUI>
-            <ButtonUI secondary size="large" disabled>
-              Secondary Large
+            <ButtonUI secondary disabled>
+              Secondary{' '}
             </ButtonUI>
           </Wrapper>
         </div>
@@ -66,7 +54,7 @@ storiesOf('Buttons', module)
     { skip: 1 }
   )
   .addWithJSX(
-    'Basic',
+    'Multiple Sizes',
     withInfo(
       `
 
@@ -85,21 +73,24 @@ storiesOf('Buttons', module)
       )(
         () => (
           <Wrapper>
-            <ButtonUI basic>Default</ButtonUI>
-            <ButtonUI primary basic>
-              Primary
+            <ButtonUI compact>Compact</ButtonUI>
+            <ButtonUI size="small">Small</ButtonUI>
+            <ButtonUI size="medium">
+              Medium
             </ButtonUI>
-            <ButtonUI secondary basic>
-              Secondary
+            <ButtonUI size="large">
+              Large
             </ButtonUI>
-            <ButtonUI error="true" basic>
-              Error
+            <ButtonUI size="big">
+              Big
             </ButtonUI>
-            <ButtonUI success="true" basic>
-              Success
+            <ButtonUI size="huge">
+              Huge
             </ButtonUI>
-            <ButtonUI positive basic>Positive</ButtonUI>
-            <ButtonUI fluid basic>Full width</ButtonUI>
+            <ButtonUI size="massive">
+              Massive
+            </ButtonUI>
+            <ButtonUI fluid>Full width</ButtonUI>
           </Wrapper>
         ),
         { skip: 1 }
@@ -170,9 +161,9 @@ Add Icons using both shorthand and longhand syntax
       () => (
         <Wrapper>
 
-          <ButtonUI icon="address card" />
+          <ButtonUI circular icon="address card" />
 
-          <ButtonUI icon labelPosition="left" secondary>
+          <ButtonUI icon labelPosition="left" secondary circular>
             <Icon name="pause" />
             Pause
           </ButtonUI>
@@ -206,22 +197,31 @@ import { Button } from 'semantic-ui-react'
             <Button.Group color="blue">
               <ButtonUI>One</ButtonUI>
               <ButtonUI>Two</ButtonUI>
-              <ButtonUI><Icon name="sass" /> Sass</ButtonUI>
+              <ButtonUI active><Icon name="sass" /> Sass</ButtonUI>
             </Button.Group>
           </Wrapper>
           <Wrapper>
             <Button.Group>
               <ButtonUI> <Icon name="home" /> Home</ButtonUI>
               <ButtonUI>Two</ButtonUI>
-              <ButtonUI>Three</ButtonUI>
+              <ButtonUI active>Three</ButtonUI>
               <ButtonUI>Four</ButtonUI>
             </Button.Group>
           </Wrapper>
           <Wrapper>
             <Button.Group primary>
               <ButtonUI>One</ButtonUI>
-              <ButtonUI><Icon name="world" /> World</ButtonUI>
+              <ButtonUI active><Icon name="world" /> World</ButtonUI>
               <ButtonUI>Four</ButtonUI>
+            </Button.Group>
+          </Wrapper>
+          <Wrapper>
+
+            <Button.Group vertical>
+              <Button>Vertical navigation menu</Button>
+              <Button active>Link active</Button>
+              <Button><Icon name="wifi" /> Internet</Button>
+              <Button>link</Button>
             </Button.Group>
           </Wrapper>
         </div>
@@ -276,47 +276,12 @@ import { Button } from 'semantic-ui-react'
           <Wrapper>
             <Button.Group color="blue">
               <ButtonUI labelPosition="left" icon="left chevron" content="Back" />
-              <ButtonUI icon="stop" content="Stop" />
+              <ButtonUI icon="stop" content="Stop" active />
               <ButtonUI labelPosition="right" icon="right chevron" content="Forward" />
             </Button.Group>
 
           </Wrapper>
         </div>
-      ),
-      { skip: 1 }
-    )
-  )
-  .addWithJSX(
-    'Social Buttons',
-    withInfo(
-      `
-      Buttons with Social links.
-
-  
-    `
-    )(
-      () => (
-        <Wrapper>
-          <ButtonUI color="facebook">
-            <Icon name="facebook" /> Facebook
-          </ButtonUI>
-          <ButtonUI color="twitter">
-            <Icon name="twitter" /> Twitter
-          </ButtonUI>
-          <ButtonUI color="google plus">
-            <Icon name="google plus" /> Google Plus
-          </ButtonUI>
-
-          <ButtonUI color="linkedin">
-            <Icon name="linkedin" /> LinkedIn
-          </ButtonUI>
-          <ButtonUI color="instagram">
-            <Icon name="instagram" /> Instagram
-          </ButtonUI>
-          <ButtonUI color="youtube">
-            <Icon name="youtube" /> YouTube
-          </ButtonUI>
-        </Wrapper>
       ),
       { skip: 1 }
     )

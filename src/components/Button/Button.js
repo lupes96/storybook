@@ -5,7 +5,6 @@ import styles from './Button.scss';
 
 const Buttons = props => (
   <Button
-    className={styles.ButtonStyles}
     {...props}
     color={props.color ? props.color : props.error === 'true' ? 'red' : props.success === 'true' ? 'green' : null}
   >

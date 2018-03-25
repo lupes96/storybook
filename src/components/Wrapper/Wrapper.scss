@@ -32,8 +32,11 @@
         flex-direction:row;
         flex-wrap:wrap;
     }
+}
 
-
+.WrapperLeft {
+    composes: Wrapper;
+    text-align:left;
 }
 
 .Wrapper > div{

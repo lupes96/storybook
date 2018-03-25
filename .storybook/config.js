@@ -11,7 +11,8 @@ function loadStories() {
 setDefaults({
   header: false,
   inline: false,
-  source: true
+  source: true,
+  props: false
 });
 setAddon(JSXAddon);
 
