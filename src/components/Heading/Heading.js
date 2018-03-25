@@ -7,4 +7,7 @@ const Heading = props => (
     {props.children}
   </Header>
 );
+
+Heading.Subheader = Header.Subheader;
+Heading.Content = Header.Content;
 export default Heading;

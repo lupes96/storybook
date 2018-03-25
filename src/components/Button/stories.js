@@ -15,7 +15,7 @@ storiesOf('Buttons', module)
     withInfo()(
       withNotes(
         `
-  This is some code with Info!!
+Standard Buttons
   
     `
       )(() => (
@@ -47,6 +47,7 @@ storiesOf('Buttons', module)
             <Button secondary disabled>
               Secondary{' '}
             </Button>
+
           </Wrapper>
         </div>
       ))
@@ -103,12 +104,7 @@ storiesOf('Buttons', module)
       `
 Animated Buttons examples.
 
-Need to import the Buttons Component from Semantic UI to get this to work
-
-~~~js
-import { Button } from 'semantic-ui-react';
-~~~
-  
+ 
     `
     )(
       () => (
@@ -181,16 +177,7 @@ Add Icons using both shorthand and longhand syntax
   )
   .addWithJSX(
     'Button Groups',
-    withInfo(
-      `
-Button Groups, import Button from the Semantic UI library
-
-~~~js
-import { Button } from 'semantic-ui-react'
-~~~
-  
-    `
-    )(
+    withInfo()(
       () => (
         <div>
           <Wrapper>
@@ -231,16 +218,7 @@ import { Button } from 'semantic-ui-react'
   )
   .addWithJSX(
     'Icon Groups',
-    withInfo(
-      `
-Icon Groups, import Button from the Semantic UI library
-
-~~~js
-import { Button } from 'semantic-ui-react'
-~~~
-  
-    `
-    )(
+    withInfo()(
       () => (
         <div>
           <Wrapper>

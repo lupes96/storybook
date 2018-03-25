@@ -9,5 +9,5 @@ const Icons = props => {
     </Icon>
   );
 };
-
+Icons.displayName = 'Icon';
 export default Icons;

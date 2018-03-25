@@ -9,7 +9,6 @@
     margin: calc(2rem -  0.14285714em ) 0em 1rem;
     padding: 0em 0em;
     @include Agenda-Semibold;
-    // font-weight: bold;
     line-height: 1.28571429em;
     text-transform: none;
     color: $black;
@@ -26,13 +25,14 @@
   ---------------*/
   
   .ui.header .sub.header {
+    @include Agenda-Light;
     display: block;
-    font-weight: normal;
+    font-weight: 100;
     padding: 0em;
     margin: 0em;
     font-size: 1rem;
     line-height: 1.2em;
-    color: rgba(0, 0, 0, 0.6);
+    color: $black;
   }
   
   /*--------------
@@ -241,7 +241,7 @@
     height: auto;
     line-height: 1;
     padding: 0em;
-    font-size: 3em;
+    font-size: 2em;
     margin: 0em auto 0.5rem;
     opacity: 1;
   }
@@ -289,13 +289,13 @@
   /*--- Red ---*/
   
   .ui.red.header {
-    color: #DB2828 !important;
+    color: $red !important;
   }
   a.ui.red.header:hover {
-    color: #d01919 !important;
+    color: $redDark !important;
   }
   .ui.red.dividing.header {
-    border-bottom: 2px solid #DB2828;
+    border-bottom: 2px solid $red;
   }
   
 
@@ -305,39 +305,39 @@
   /*--- Yellow ---*/
   
   .ui.yellow.header {
-    color: #FBBD08 !important;
+    color: $yellow !important;
   }
   a.ui.yellow.header:hover {
-    color: #eaae00 !important;
+    color: $yellowDark !important;
   }
   .ui.yellow.dividing.header {
-    border-bottom: 2px solid #FBBD08;
+    border-bottom: 2px solid $yellow;
   }
   
 
   /*--- Green ---*/
   
   .ui.green.header {
-    color: #21BA45 !important;
+    color: $green !important;
   }
   a.ui.green.header:hover {
-    color: #16ab39 !important;
+    color: $greenDark  !important;
   }
   .ui.green.dividing.header {
-    border-bottom: 2px solid #21BA45;
+    border-bottom: 2px solid $green ;
   }
 
 
   /*--- Blue ---*/
   
   .ui.blue.header {
-    color: #2185D0 !important;
+    color: $blue !important;
   }
   a.ui.blue.header:hover {
-    color: #1678c2 !important;
+    color: $blueDark !important;
   }
   .ui.blue.dividing.header {
-    border-bottom: 2px solid #2185D0;
+    border-bottom: 2px solid $blue;
   }
   
 
@@ -345,13 +345,13 @@
   /*--- Grey ---*/
   
   .ui.grey.header {
-    color: #767676 !important;
+    color: $grey !important;
   }
   a.ui.grey.header:hover {
-    color: #838383 !important;
+    color: $greyDark !important;
   }
   .ui.grey.dividing.header {
-    border-bottom: 2px solid #767676;
+    border-bottom: 2px solid $grey;
   }
   
 
