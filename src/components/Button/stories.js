@@ -28,12 +28,13 @@ storiesOf('Buttons', module)
             <ButtonUI secondary>
               Secondary{' '}
             </ButtonUI>
-            <ButtonUI error="true">
-              Error
-            </ButtonUI>
             <ButtonUI success="true">
               Success
             </ButtonUI>
+            <ButtonUI error="true">
+              Error
+            </ButtonUI>
+
             <ButtonUI positive>Positive</ButtonUI>
 
           </Wrapper>
@@ -201,7 +202,7 @@ import { Button } from 'semantic-ui-react'
             </Button.Group>
           </Wrapper>
           <Wrapper>
-            <Button.Group>
+            <Button.Group basic>
               <ButtonUI> <Icon name="home" /> Home</ButtonUI>
               <ButtonUI>Two</ButtonUI>
               <ButtonUI active>Three</ButtonUI>
@@ -245,11 +246,11 @@ import { Button } from 'semantic-ui-react'
         <div>
           <Wrapper>
 
-            <Button.Group>
+            <Button.Group basic>
               <ButtonUI icon>
                 <Icon name="desktop" />
               </ButtonUI>
-              <ButtonUI icon>
+              <ButtonUI icon active>
                 <Icon name="code" />
               </ButtonUI>
               <ButtonUI icon primary>
@@ -261,11 +262,11 @@ import { Button } from 'semantic-ui-react'
             </Button.Group>
           </Wrapper>
           <Wrapper>
-            <Button.Group>
+            <Button.Group secondary>
               <ButtonUI icon>
                 <Icon name="envelope" />
               </ButtonUI>
-              <ButtonUI icon secondary>
+              <ButtonUI icon active>
                 <Icon name="wifi" />
               </ButtonUI>
               <ButtonUI icon>

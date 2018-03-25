@@ -9,6 +9,7 @@ const Buttons = props => (
     color={props.color ? props.color : props.error === 'true' ? 'red' : props.success === 'true' ? 'green' : null}
   >
     {props.children}
+
   </Button>
 );
 
