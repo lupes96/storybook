@@ -3,10 +3,12 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withNotes } from '@storybook/addon-notes';
 import { withInfo } from '@storybook/addon-info';
-import { Image, Segment } from 'semantic-ui-react';
+import { Image } from 'semantic-ui-react';
 import Wrapper from '../Wrapper/Wrapper';
 import Icon from '../Icons/Icons';
+
 import Header from './Heading';
+import Segment from '../Segment/Segment';
 import avatar from '../../assets/images/avatar.png';
 
 storiesOf('Headings', module)

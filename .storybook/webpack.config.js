@@ -1,6 +1,15 @@
 module.exports = {
   module: {
     rules: [
+      // {
+      //   test: /\.jsx?$/,
+      //   loader: 'babel-loader',
+      //   exclude: '/node_modules/',
+      //   options: {
+      //     plugins: ['lodash', { id: ['lodash', 'semantic-ui-react'] }],
+      //     presets: ['es2015', 'react']
+      //   }
+      // },
       {
         test: /\.(woff|ttf)(\?[a-z0-9=.]+)?$/,
         loader: 'url-loader'
