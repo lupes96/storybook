@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button } from 'semantic-ui-react';
-import Icon from '../Icons/Icons';
 import styles from './Button.scss';
 // import myImage from '../../assets/images/logo.png';
 
