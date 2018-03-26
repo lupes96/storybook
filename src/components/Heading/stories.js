@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withNotes } from '@storybook/addon-notes';
 import { withInfo } from '@storybook/addon-info';
-import { Image } from 'semantic-ui-react';
+import Image from '../Image/Image';
 import Wrapper from '../Wrapper/Wrapper';
 import Icon from '../Icons/Icons';
 

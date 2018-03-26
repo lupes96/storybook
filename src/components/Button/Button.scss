@@ -517,10 +517,11 @@ transform: translateY(200%);
     border-radius: 0.28571429rem;
     text-transform: none;
     text-shadow: none !important;
-
-            box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.15) inset;
+box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.15) inset;
   }
-
+  .ui.basic.button {
+font-weight:300;
+  }
 
   .ui.basic.buttons {
 
@@ -744,8 +745,7 @@ transform: translateY(200%);
     color: rgba(0, 0, 0, 0.4);
     font-style: normal;
     font-weight: bold;
-
-            box-shadow: 0px 0px 0px 1px transparent inset;
+box-shadow: 0px 0px 0px 1px transparent inset;
   }
   .ui.buttons .or[data-text]:before {
     content: attr(data-text);

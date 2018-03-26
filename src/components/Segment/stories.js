@@ -3,8 +3,9 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withNotes } from '@storybook/addon-notes';
 import { withInfo } from '@storybook/addon-info';
-import { Image, Message } from 'semantic-ui-react';
+import { Message } from 'semantic-ui-react';
 import Wrapper from '../Wrapper/Wrapper';
+
 import Segment from './Segment';
 import Header from '../Heading/Heading';
 import Icon from '../Icons/Icons';
