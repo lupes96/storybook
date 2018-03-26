@@ -98,6 +98,24 @@ Basic Buttons
               Secondary{' '}
             </Button>
 
+            <Heading as="h3" textAlign="center">Hierarchy</Heading>
+            <Button primary basic>
+              Cancel
+            </Button>
+            <Button negative="true">
+              Delete
+            </Button>
+
+            <Heading as="h3" textAlign="center">Hierarchy V2</Heading>
+            <Button primary basic color="black">
+              Cancel
+            </Button>
+            <Button positive="true" basic>
+              Previous
+            </Button>
+            <Button positive="true">
+              Next
+            </Button>
           </Wrapper>
         </div>
       ))

@@ -55,8 +55,7 @@ $btnColor: $black;
       }
     
   }
-  // box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset, 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
-  
+ 
   /*******************************
               States
   *******************************/
@@ -1794,6 +1793,15 @@ box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 
 
 
+  box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset, 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.1);
+    
+
+    box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset,  0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+
+ 
+
+    box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset, 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+
         /* Basic */
 
         .ui.basic.button {
@@ -1802,9 +1810,17 @@ box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
           color: $black !important;
         }
 
+        .ui.basic.black.button {      
+          box-shadow: 0px 0px 0px 1px #fff inset !important;
+  color: $black !important;
+  &:hover, &:focus, &:active{
+    box-shadow: 0px 0px 0px 1px #fff inset !important;
+  }
+}
+
         .ui.basic.button:hover {
           background: transparent !important;
-          box-shadow: 0px 0px 0px 1px $greyDark inset !important;
+          box-shadow: 0px 0px 0px 1px $greyDark inset, 0 7px 14px rgba(50,50,93,.07), 0 3px 6px rgba(0,0,0,.05) !important;
                 
           color: $black !important;
         }
