@@ -37,6 +37,20 @@ storiesOf('Images', module).addWithJSX(
 
       <Header as="h3">Centered</Header>
       <Image src={img} size="medium" centered />
+
+      <Header as="h3">Sizes</Header>
+      <Image src={img} size="small" />
+      <Image src={img} size="medium" />
+      <Image src={img} size="large" />
+      <Image src={img} size="big" />
+
+      <Header as="h3">Group</Header>
+      <Image.Group size="medium">
+        <Image src={img} />
+        <Image src={img} />
+        <Image src={img} />
+        <Image src={img} />
+      </Image.Group>
     </Wrapper>
   ))
 );
