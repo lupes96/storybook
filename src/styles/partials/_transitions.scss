@@ -6,10 +6,10 @@
     transition: $type 0.3s ease;
 }
 
-@mixin transition($type) {
+@mixin transition($type, $time:.3s) {
     -webkit-backface-visibility: hidden; 
     -ms-transform: translateZ(0); 
     -webkit-transform: translateZ(0); 
     transform: translateZ(0);
-    transition: $type 0.3s ease;
+    transition: $type $time ease;
 }

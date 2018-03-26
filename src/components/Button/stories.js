@@ -56,6 +56,55 @@ Standard Buttons
     { skip: 1 }
   )
   .addWithJSX(
+    'Basic',
+    withInfo()(
+      withNotes(
+        `
+Basic Buttons
+  
+    `
+      )(() => (
+        <div>
+
+          <Wrapper>
+            <Heading as="h3" textAlign="center">Standard</Heading>
+            <Button basic>Default</Button>
+            <Button primary basic>
+              Primary
+            </Button>
+            <Button secondary basic>
+              Secondary
+            </Button>
+            <Button success="true" basic>
+              Success
+            </Button>
+            <Button error="true" basic>
+              Error
+            </Button>
+
+            <Button positive basic>Positive</Button>
+
+            <Button color="blue" basic>Blue</Button>
+            <Button color="red" basic>red</Button>
+            <Button color="grey" basic>grey</Button>
+            <Button color="green" basic>green</Button>
+            <Heading as="h3" textAlign="center"> Disabled</Heading>
+
+            <Button disabled basic>Default</Button>
+            <Button primary disabled basic>
+              Primary{' '}
+            </Button>
+            <Button secondary disabled basic>
+              Secondary{' '}
+            </Button>
+
+          </Wrapper>
+        </div>
+      ))
+    ),
+    { skip: 1 }
+  )
+  .addWithJSX(
     'Multiple Sizes',
     withInfo(
       `
@@ -74,26 +123,42 @@ Standard Buttons
     `
       )(
         () => (
-          <Wrapper>
-            <Button compact>Compact</Button>
-            <Button size="small">Small</Button>
-            <Button size="medium">
-              Medium
-            </Button>
-            <Button size="large">
-              Large
-            </Button>
-            <Button size="big">
-              Big
-            </Button>
-            <Button size="huge">
-              Huge
-            </Button>
-            <Button size="massive">
-              Massive
-            </Button>
-            <Button fluid>Full width</Button>
-          </Wrapper>
+          <div>
+            <Wrapper>
+              <Button compact>Compact</Button>
+            </Wrapper>
+            <Wrapper>
+              <Button size="small">Small</Button>
+            </Wrapper>
+            <Wrapper>
+              <Button size="medium">
+                Medium
+              </Button>
+            </Wrapper>
+            <Wrapper>
+              <Button size="large">
+                Large
+              </Button>
+            </Wrapper>
+            <Wrapper>
+              <Button size="big">
+                Big
+              </Button>
+            </Wrapper>
+            <Wrapper>
+              <Button size="huge">
+                Huge
+              </Button>
+            </Wrapper>
+            <Wrapper>
+              <Button size="massive">
+                Massive
+              </Button>
+            </Wrapper>
+            <Wrapper>
+              <Button fluid>Full width</Button>
+            </Wrapper>
+          </div>
         ),
         { skip: 1 }
       )

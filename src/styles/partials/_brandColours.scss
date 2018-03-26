@@ -3,22 +3,30 @@
 
 $green: #064e37;
 $greenDark: darken(#064e37, 4%);
+$greenLight: lighten(#064e37, 4%);
 $greenFresh: #2ea836;
 $greenFreshDark: darken($greenFresh, 5%);
+$greenFreshLight: lighten($greenFresh, 5%);
 $yellow: #fcbc00;
 $yellowDark: darken(#fcbc00, 2%);
-$greyDark: #686c6f;
+$yellowLight: lighten(#fcbc00, 4%);
+$greyDarkest: #686c6f;
 $primary: $green;
 $primaryDark: $greenDark;
+$primaryLight: $greenLight;
 $secondary: $yellow;
 $secondaryDark: $yellowDark;
 // $grey:  #e3e6e5;
-$grey:#e8ebec;
+$grey:#ecedf0;
+$greyDark: darken($grey, 5%);
+$greyLight:lighten($grey, 3%);
 $black:  #222;
 $red: #99061a;
 $redDark:darken($red, 5%);
+$redLight:lighten($red, 5%);
 $blue:#006ab4;
 $blueDark:darken($blue, 5%);
+$blueLight:lighten($blue, 5%);
 $error: $red;
 $success: $greenFresh;
 
