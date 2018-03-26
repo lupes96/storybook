@@ -84,10 +84,6 @@ Basic Buttons
 
             <Button positive basic>Positive</Button>
 
-            <Button color="blue" basic>Blue</Button>
-            <Button color="red" basic>red</Button>
-            <Button color="grey" basic>grey</Button>
-            <Button color="green" basic>green</Button>
             <Heading as="h3" textAlign="center"> Disabled</Heading>
 
             <Button disabled basic>Default</Button>
