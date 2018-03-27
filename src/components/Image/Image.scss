@@ -16,7 +16,7 @@
  @include transition(transform);
    transform:scale(1);
  }
- .ui.image:hover  img{
+ .ui.image:not(.label):hover  img{
    transform:scale(1.2);
  }
 

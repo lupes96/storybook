@@ -1,3 +1,5 @@
+const { injectBabelPlugin } = require('react-app-rewired');
+
 module.exports = {
   module: {
     rules: [
@@ -36,7 +38,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              modules: true,
+              modules: false,
               importLoaders: 1,
               localIdentName: '[name]__[local]__[hash:base64:7]',
               sourceMap: true

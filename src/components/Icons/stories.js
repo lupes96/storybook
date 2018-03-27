@@ -19,7 +19,7 @@ World icon
       <Header as="h3">Web content</Header>
       <Icon name="search" size="large" />
       <Icon name="mail outline" size="large" />
-      <Icon loading name="signal" size="large" />
+      <Icon name="signal" size="large" />
       <Icon name="setting" size="large" />
       <Icon name="home" size="large" />
       <Icon name="inbox" size="large" />
