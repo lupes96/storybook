@@ -78,11 +78,6 @@ storiesOf('Label', module).addWithJSX(
 
       </p>
 
-      <div>
-        <Label as="a" tag>New</Label>
-        <Label as="a" color="red" tag>Upcoming</Label>
-        <Label as="a" color="teal" tag>Featured</Label>
-      </div>
     </Wrapper>
   ))
 );

@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "storybook": "start-storybook -p 9001 -c .storybook -s ./src/assets/fonts, ./src/assets/images"
+    "storybook": "start-storybook -p 9001 -c .storybook -s ./src/assets/fonts, ./src/assets/images",
+    "build-storybook": "build-storybook  -o .out -s ./src/assets",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +17,7 @@
     "@storybook/addon-viewport": "^3.3.15",
     "@storybook/addons": "^3.3.15",
     "@storybook/react": "^3.3.15",
+    "@storybook/storybook-deployer": "^2.3.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-plugin-import": "^1.6.7",
